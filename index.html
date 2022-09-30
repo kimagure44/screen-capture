@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Devices</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video id="preview" autoplay>Your browser doesn't support HTML5.</video>
+      <div class="group-buttons">
+        <div class="range-wrap">
+          <span>Width (px)</span>
+          <div class="range-container">
+            <input
+              type="range"
+              class="range"
+              id="width"
+              min="320"
+              max="3840"
+              value="1280"
+            />
+            <output class="bubble"></output>
+          </div>
+        </div>
+        <div class="range-wrap">
+          <span>Height (px)</span>
+          <div class="range-container">
+            <input
+              type="range"
+              class="range"
+              id="height"
+              min="240"
+              max="2160"
+              value="720"
+            />
+            <output class="bubble"></output>
+          </div>
+        </div>
+        <input type="text" id="filename" placeholder="filename" />
+        <button id="capture" class="start">Start capture</button>
+      </div>
+    </div>
+    <div id="notification"></div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
